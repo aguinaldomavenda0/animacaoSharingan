@@ -1,0 +1,239 @@
+*{margin:0; padding: 0;}
+body{
+	background-color: #1b1d20;
+	text-align: center;
+	justify-content: start;
+	align-items:right;
+	display: flex;
+}
+img{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.fundo{
+}
+
+
+@keyframes Circle {
+0%{transform: rotate(10deg);}
+20%{
+transform: rotate(40deg);
+}
+40%{
+transform: rotate(90deg);
+}
+60%{
+transform: rotate(180deg);
+}
+80%{
+transform: rotate(260deg);
+
+}
+100%{
+transform: rotate(360deg);
+}
+}
+
+div.s1{
+background:rgba(255, 4, 10, .9);
+max-width: 100%;
+max-height: 100;
+width: 500px;
+height: 500px;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5%;
+margin-bottom: 10%;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+border-radius: 50%;
+border: 3px solid #000;
+
+}
+
+div.circle{animation: Circle infinite linear 4s;}
+
+div.iris{
+padding: 50px;
+margin: auto;
+width: 250px;
+height: 250px;
+border-radius: 50%;
+margin-top: 10%;
+margin-bottom: 10%;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+border: 2px dashed #000;
+}
+div.tomoe{
+padding: auto;
+width: 90px;
+height: 90px;
+background:#000;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+border-top-left-radius: 50%;
+}
+div.tomoe-1{
+margin-left: 20px;
+transform: rotate(200deg) translateX(7px)perspective(5px);
+margin-top: -50.5%;
+z-index: 2;
+position: relative;
+}
+
+div.tomoe-2{
+margin-left: -400px;
+transform: rotate(-290deg) translateX(7px)perspective(5px);
+margin-top: -50.5%;
+z-index: 2;
+}
+
+div.tomoe-3{
+margin-left: -50px;
+transform: rotate(330deg) translateX(7px)perspective(5px);
+margin-top: 350px;
+z-index: 2;
+position: absolute;
+}
+
+div.pupila{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background:#000;
+position: fixed;
+transition: 1s;
+}
+div.pupila:hover{
+cursor: pointer;
+padding: 5px;
+transition: 1s;
+}
+@media (max-width: 600px){
+	body{
+		background: #1b1d20;
+		text-align: center;
+		justify-content: center;
+		align-items:center;
+		display: flex;
+	}
+	.popNucha{
+		left: auto;
+		max-width: 300px; 
+	}
+	#endYabarai{	
+		max-width: 280px; 
+		font-size: 16px;
+	}
+	
+	div.s1{
+		background:rgba(255, 4, 10, .9);
+		max-width: 250px;
+		max-height: 250px;
+		width: 500px;
+		height: 500px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		margin-bottom: 10%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		border-radius: 50%;
+		border: 3px solid #000;
+	}
+	div.iris{
+		padding: 50px;
+		margin: auto;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		border: 2px dashed #000;
+	}
+	div.tomoe{
+		padding: auto;
+		width: 40px;
+		height: 40px;
+		background:#000;
+		border-top-right-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+	div.tomoe-1{
+		margin-left: -2px;
+		transform: rotate(200deg) translateX(7px)perspective(5px);
+		margin-top: -50.5%;
+		z-index: 2;
+		position: relative;
+	}
+	div.tomoe-2{
+		margin-left: -180px;
+		transform: rotate(-290deg) translateX(7px)perspective(5px);
+		margin-top: -50.5%;
+		z-index: 2;
+	}
+	div.tomoe-3{
+		margin-left: -32px;
+		transform: rotate(313deg) translateX(25px)perspective(35px);
+		margin-top: 163px;
+		z-index: 2;
+		position: absolute;
+	}
+}
+
+img.mostrar{
+	display: block;
+	animation: modal 4s linear;
+}
+@keyframes modal{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+p{
+	font-family: 'Courier New', Courier, monospace;
+	color:  aliceblue;
+}
+.footer{
+	position: fixed;
+	bottom: 5px;
+	left: 43%;
+	max-width: 600px;
+	text-align: center;
+	margin: 40px auto;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 22px;
+	color: #fff;
+}
+.iii::after{
+		content: '|';
+		margin-left: 5px;
+		opacity: 1;
+		animation: pisca .7s infinite;
+}
+.popNucha{
+	opacity:1;bottom: 30px;height: 150px;width: 370px; position:absolute;right: 2pc;display: flex; flex: 1; justify-content: center; align-items: center; border-radius: 10px;z-index: 100;background-color:#1b1d20;box-shadow: 0 4px 20px 2px #ff040a96;
+}
+#endYabarai{
+	text-align: left;width: 330px; margin: 20px;
+}
